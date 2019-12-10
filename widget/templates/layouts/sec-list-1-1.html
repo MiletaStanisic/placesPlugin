@@ -35,7 +35,7 @@
                             </div>
                         </a>
                     </div>
-                    <div ng-repeat="item in WidgetSections.sections | unique: 'id'"
+                    <div ng-repeat="item in WidgetSections.sections | unique: 'id'" ng-if="item.data.secTitle"
                          class="plugin-banner has-info-bar clearfix"
                          style="min-height: 10px">
                         <a ng-click="WidgetSections.showItems(item.id);">

@@ -30,7 +30,7 @@
                                 </div>
                             </a>
                         </div>
-                        <div class="list-item" ng-repeat="item in WidgetSections.sections | unique: 'id'">
+                        <div class="list-item" ng-repeat="item in WidgetSections.sections | unique: 'id'" ng-if="item.data.secTitle">
                             <a ng-click="WidgetSections.showItems(item.id);">
                                 <div class="list-item-media text-left overflow-hidden">
                                     <div ng-if="item.data.mainImage" class="list-media-holder pull-left">

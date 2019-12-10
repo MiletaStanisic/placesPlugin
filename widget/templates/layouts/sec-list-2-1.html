@@ -29,7 +29,7 @@
                         </div>
                     </a>
                 </div>
-                <div ng-repeat="item in WidgetSections.sections | unique: 'id'">
+                <div ng-repeat="item in WidgetSections.sections | unique: 'id'" ng-if="item.data.secTitle">
                     <a ng-click="WidgetSections.showItems(item.id);">
                         <div class="plugin-banner clearfix border-bottom-grey">
                             <div class="plugin-slide text-center">
